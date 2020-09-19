@@ -8,8 +8,10 @@ public class LoopFun {
      * @return the factorial of the number
      */
     public Integer factorial(Integer number){
-        return null;
-}
+        if (number == 0)
+            return 1;
+
+        return number * factorial(number - 1);}
 
     /**
      * Given a phrase, get the acronym of that phrase. Acronym is the combination of
@@ -19,7 +21,11 @@ public class LoopFun {
      * @return Upper case string of the first letter of each word
      */
     public String acronym(String phrase) {
-       return null;
+        String[] myWord = phrase.split(" ");
+        for(int i = 0; i < myWord.length; i++){
+                String s = myWord[i];
+        }
+        return null;
     }
 
     /**
@@ -35,6 +41,7 @@ public class LoopFun {
      * @return the encrypted string by shifting each character by three character
      */
     public String encrypt(String word) {
+
         return null;
     }
 
